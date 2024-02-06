@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayı Bulma Oyunu</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+      }
+
+      #result {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sayı Bulma Oyunu</h1>
+    <p>Aramak için bir sayı girin:</p>
+    <form onsubmit="return checkGuess()">
+      <input type="number" id="guessInput" />
+      <button type="submit">Ara</button>
+    </form>
+    <div id="result"></div>
+    <p>Yapılan denemeler: <span id="attempts">0</span></p>
+
+    <script>
+      // Rastgele bir sayı belirleme
+      const targetNumber = Math.floor(Math.random() * 100) + 1;
+
+      let attempts = 0;
+
+      function checkGuess() {
+        const guessInput = document.getElementById("guessInput");
+        const resultDiv = document.getElementById("result");
+        const attemptsSpan = document.getElementById("attempts");
+
+        const userGuess = parseInt(guessInput.value);
+
+        if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+          resultDiv.textContent = "Lütfen 1 ile 100 arasında bir sayı girin.";
+          return false;
+        } else {
+          attempts++;
+          attemptsSpan.textContent = attempts;
+
+          if (userGuess === targetNumber) {
+            resultDiv.textContent = "Doğru! Tebrikler!";
+            resultDiv.style.color = "green";
+            return false; // Formu submit etme
+          } else if (userGuess < targetNumber) {
+            resultDiv.textContent = "Daha Yüksek";
+            resultDiv.style.color = "black";
+          } else {
+            resultDiv.textContent = "Daha Düşük";
+            resultDiv.style.color = "black";
+          }
+
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
