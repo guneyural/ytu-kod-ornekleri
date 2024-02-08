@@ -33,3 +33,20 @@
 - Alan karmaşıklığı (Space Complexity)
 - Özyineli fonksiyonlarda alan karmaşıklığı
 - Koddan karmaşıklık analizi
+
+## Algoritma Tasarım Teknikleri
+
+- Parçala fethet yaklaşımı
+- Doğrusal şekilde bir listedeki maksimum sayıyı bulma
+- Parçala fethet yaklaşımı ile bir listedeki maksimum sayıyı bulma
+- Merge sort algoritması ve kodlaması
+- Dinamik programlama nedir
+- Dinamik programlama ile Fibonacci hesaplama
+- Yukarıdan aşağı yaklaşımı
+- Aşağıdan yukarı yaklaşımı
+- En uzun ortak alt dizi problemi
+- Yukarıdan aşağı yaklaşımı ve aşağıdan yukarı yaklaşımı ile en uzun ortak alt dizi problemi çözümü ve kodlaması
+- Açgözlü yaklaşım
+- Her adımda en iyiyi seçme
+- Açgözlü yaklaşım ve dinamik programlama yaklaşımı ile para üstü problemi ve karşılaştırması
+- Açgözlü yaklaşım ile para üstü problemi kodlaması
