@@ -50,3 +50,13 @@
 - Her adımda en iyiyi seçme
 - Açgözlü yaklaşım ve dinamik programlama yaklaşımı ile para üstü problemi ve karşılaştırması
 - Açgözlü yaklaşım ile para üstü problemi kodlaması
+
+## Sıralama Algoritmaları
+
+- Sıralamanın önemi ve kullanım alanları
+- Bubble sort ve kod örneği
+- Selection sort ve kod örneği
+- Insertion sort ve kod örneği
+- Merge sort ve kod örneği
+- Quick sort ve kod örneği
+- Quick sort kullanarak objeleri sıralama
